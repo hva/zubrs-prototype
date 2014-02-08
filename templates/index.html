@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="ru" > <![endif]-->
 <html class="no-js" lang="ru">
 <head>
     <meta charset="utf-8" />
@@ -6,6 +7,7 @@
     <title>МООБСК Брестские Зубры</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
 
@@ -21,8 +23,8 @@
             </div>
             <div class="large-4 columns">
                 <ul class="inline-list right">
-                    <li><a href="#">Войти</a></li>
-                    <li><a href="#">Зарегистрироваться</a></li>
+                    <li><a href="#" data-reveal-id="loginModal" data-reveal>Войти</a></li>
+                    <li><a href="#" data-reveal-id="loginModal" data-reveal>Зарегистрироваться</a></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +42,7 @@
             <nav class="top-bar">
                 <section class="top-bar-section">
                     <ul class="left">
-                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Новости</a></li>
                         <li><a href="#">Команды</a></li>
                         <li><a href="#">Гостевая</a></li>
                         <li><a href="#">Руководство</a></li>
@@ -50,5 +52,48 @@
             </nav>
         </div>
     </div>
+
+    <div id="loginModal" class="reveal-modal tiny" data-reveal>
+        <form>
+            <div class="row">
+                <div class="small-8">
+                    <div class="row">
+                        <div class="small-9 small-offset-3 columns">
+                            <h4>Авторизация</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="email-label" class="right inline">Логин</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" id="email-label">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="password-label" class="right inline">Пароль</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="password" id="password-label">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-offset-3 small-9 columns">
+                            <a href="#" class="button">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>
