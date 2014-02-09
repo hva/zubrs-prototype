@@ -1,23 +1,35 @@
-.top-content {
+.bz-light-gray {
     background-color: #eee;
 }
 
-    .top-content .inline-list, .top-content h6 {
-        margin: 0;
-        line-height: 1.6rem;
-    }
+.bz-middle-gray {
+    background-color: #ddd;
+}
 
-    .top-content a {
-        font-size: 0.8rem;
-    }
-
-.top-menu-content {
+.bz-dark-gray {
     background-color: #333;
 }
 
-.logo {
+.bz-top-content .inline-list,
+.bz-top-content h6 {
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+.bz-top-content a {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
+.bz-field {
+    background: url(../img/field.jpg) no-repeat;
+    height: 200px;
+}
+
+
+.bz-logo {
     display: block;
-    width: 90px;
-    height: 140px;
-    background: url(../img/logo.png) 0 20px no-repeat;
+    width: 160px;
+    height: 200px;
+    background: url(../img/logo.png) center center no-repeat;
 }
