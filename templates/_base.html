@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="ru" > <![endif]-->
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>МООБСК Брестские Зубры</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+    <div class="bz-top-content bz-light-gray">
+        <div class="row">
+            <div class="large-2 columns">
+                <a href="/">English</a>
+            </div>
+            <div class="large-6 columns">
+                <h6>Официальный сайт МООБСК «Брестские зубры»</h6>
+            </div>
+            <div class="large-4 columns">
+                <ul class="inline-list right">
+                    <li><a href="#" data-reveal-id="loginModal" data-reveal>Войти</a></li>
+                    <li><a href="#" data-reveal-id="registerModal" data-reveal>Зарегистрироваться</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bz-middle-gray">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="bz-field">
+                    <a class="bz-logo" href="/"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bz-dark-gray">
+        <div class="row">
+            <div class="small-12 columns">
+                <nav class="top-bar">
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Команды</a></li>
+                            <li><a href="#">Гостевая</a></li>
+                            <li><a href="#">Руководство</a></li>
+                            <li><a href="#">История</a></li>
+                        </ul>
+                    </section>
+                    <section class="top-bar-section">
+                        <ul class="right">
+                            <li class="has-form">
+                                <div class="row collapse">
+                                    <div class="small-8 columns">
+                                        <input type="text">
+                                    </div>
+                                    <div class="small-4 columns">
+                                        <input type="button" class="button expand" value="Найти" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <div id="loginModal" class="reveal-modal tiny" data-reveal>
+        {% include 'forms/login.html' %}
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="registerModal" class="reveal-modal tiny" data-reveal>
+        {% include 'forms/register.html' %}
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
