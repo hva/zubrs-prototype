@@ -1,0 +1,10 @@
+<form>
+    <div class="row">
+        <div class="small-8">
+            {% include 'forms/header.html' with {'header': 'Авторизация'} %}
+            {% include 'forms/input.html' with {'id': 'login', 'label': 'Логин'} %}
+            {% include 'forms/input.html' with {'id': 'password', 'label': 'Пароль', 'type': 'password'} %}
+            {% include 'forms/submit.html' with {'label': 'Войти'} %}
+        </div>
+    </div>
+</form>
