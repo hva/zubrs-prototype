@@ -1,0 +1,23 @@
+.top-content {
+    background-color: #eee;
+}
+
+    .top-content .inline-list, .top-content h6 {
+        margin: 0;
+        line-height: 1.6rem;
+    }
+
+    .top-content a {
+        font-size: 0.8rem;
+    }
+
+.top-menu-content {
+    background-color: #333;
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 140px;
+    background: url(../img/logo.png) 0 20px no-repeat;
+}
