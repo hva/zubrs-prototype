@@ -47,3 +47,12 @@ body {
 .bz-white {
     background-color: #fff;
 }
+
+.bz-footer {
+    background-color: #666;
+    padding-top: 10px;
+}
+.bz-footer p {
+    font-size: 0.8rem;
+    color: #fff;
+}
