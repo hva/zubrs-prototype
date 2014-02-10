@@ -1,25 +1,21 @@
-.bz-light-gray {
-    background-color: #eee;
-}
-
-.bz-middle-gray {
+body {
     background-color: #ddd;
 }
 
-.bz-dark-gray {
-    background-color: #333;
+.bz-top-content {
+    background-color: #eee;
 }
 
-.bz-top-content .inline-list,
-.bz-top-content h6 {
-    margin: 0;
-    line-height: 1.6rem;
-}
+    .bz-top-content .inline-list,
+    .bz-top-content h6 {
+        margin: 0;
+        line-height: 1.6rem;
+    }
 
-.bz-top-content a {
-    font-size: 0.8rem;
-    line-height: 1.6rem;
-}
+    .bz-top-content a {
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
 
 .bz-field {
     background: url(../img/field.jpg) no-repeat;
@@ -46,4 +42,8 @@
     padding-bottom: 0.35rem;
     margin-bottom: 0;
     font-size: 0.75rem;
+}
+
+.bz-white {
+    background-color: #fff;
 }
