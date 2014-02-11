@@ -39,7 +39,7 @@ body {
   font-size: 100%; }
 
 body {
-  background: white;
+  background: #dddddd;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -2658,9 +2658,6 @@ blockquote p {
   .show-for-print {
     display: inherit !important; } }
 /* site */
-body {
-  background-color: #ddd; }
-
 .bz-top-content {
   background-color: #eee; }
 
