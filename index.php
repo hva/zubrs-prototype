@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+require 'vendor/Twig/Autoloader.php';
 
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('templates');
