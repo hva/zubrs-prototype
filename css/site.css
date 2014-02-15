@@ -2657,35 +2657,23 @@ blockquote p {
 
   .show-for-print {
     display: inherit !important; } }
+/* bz-very-top */
+.bz-very-top {
+  background: #333; }
+  .bz-very-top a, .bz-very-top span {
+    color: #999;
+    line-height: 1.8rem; }
+  .bz-very-top a {
+    font-size: 0.8rem; }
+  .bz-very-top .inline-list {
+    margin: 0; }
+
 /* site */
-.bz-top-content {
-  background-color: #eee; }
-
-.bz-top-content .inline-list,
-.bz-top-content h6 {
-  margin: 0;
-  line-height: 1.6rem; }
-
-.bz-top-content a {
-  font-size: 0.8rem;
-  line-height: 1.6rem; }
-
-.bz-field {
-  background: url(../img/field.jpg) no-repeat;
-  height: 200px; }
-
-.bz-logo {
-  display: block;
-  width: 160px;
-  height: 200px;
-  background: url(../img/logo.png) center center no-repeat; }
-
 .top-bar input {
   height: auto;
   padding-top: 0.35rem;
   padding-bottom: 0.35rem;
   font-size: 0.75rem; }
-
 .top-bar .button {
   padding-top: 0.45rem;
   padding-bottom: 0.35rem;
@@ -2698,7 +2686,6 @@ blockquote p {
 .bz-footer {
   background-color: #666;
   padding-top: 10px; }
-
-.bz-footer p {
-  font-size: 0.8rem;
-  color: #fff; }
+  .bz-footer p {
+    font-size: 0.8rem;
+    color: #fff; }
