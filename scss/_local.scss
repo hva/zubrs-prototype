@@ -54,10 +54,11 @@ $bz-dark: #222;
         color: #444;
     }
     border-top: 4px solid $topbar-bg-color;
-    box-shadow: 0 0 20px rgba(#000, .9);
+    box-shadow: 0 4px 20px rgba(#000, .9);
 }
 
 .bz-footer-logo {
+    display: block;
     background: url(img/logo.png) center 0 no-repeat;
     width: 120px;
     height: 180px;

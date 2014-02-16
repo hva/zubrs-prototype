@@ -35,11 +35,9 @@
             <nav class="top-bar">
                 <section class="top-bar-section">
                     <ul class="left">
-                        <li><a href="#">НОВОСТИ</a></li>
-                        <li><a href="#">КОМАНДЫ</a></li>
-                        <li><a href="#">СОРЕВНОВАНИЯ</a></li>
-                        <li><a href="#">РУКОВОДСТВО</a></li>
-                        <li><a href="#">ИСТОРИЯ</a></li>
+                        {% for x in topMenu %}
+                        <li{% if x.active %} class="active"{% endif %}><a href="{{ x.url }}">{{ x.title|upper }}</a></li>
+                        {% endfor %}
                     </ul>
                 </section>
                 <section class="top-bar-section">
@@ -67,16 +65,14 @@
 
     <div class="row bz-footer">
         <div class="small-2 columns">
-            <div class="bz-footer-logo"></div>
+            <a href="/" class="bz-footer-logo"></a>
         </div>
         <div class="small-8 columns end">
             <div class="row">
                 <ul class="inline-list">
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Команды</a></li>
-                    <li><a href="#">Соревнования</a></li>
-                    <li><a href="#">Руководство</a></li>
-                    <li><a href="#">История</a></li>
+                    {% for x in topMenu %}
+                    <li><a href="{{ x.url }}">{{ x.title|title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="row">

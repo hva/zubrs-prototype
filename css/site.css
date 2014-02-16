@@ -2691,7 +2691,7 @@ blockquote p {
   background-color: #222222;
   padding-top: 10px;
   border-top: 4px solid #5a0407;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); }
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9); }
   .bz-footer a {
     font-size: 0.8rem;
     color: #666; }
@@ -2700,6 +2700,7 @@ blockquote p {
     color: #444; }
 
 .bz-footer-logo {
+  display: block;
   background: url(img/logo.png) center 0 no-repeat;
   width: 120px;
   height: 180px; }
