@@ -1,3 +1,5 @@
+/* _base.html */
+
 $bz-dark: #222;
 
 .bz-very-top {
@@ -15,7 +17,7 @@ $bz-dark: #222;
     .inline-list {
         margin: 0;
     }
-    border-bottom: 2px solid scale-color($primary-color, $lightness: 10%);
+    border-bottom: 2px solid scale-color($primary-color, $lightness: 5%);
 }
 
 .top-bar {
@@ -31,10 +33,13 @@ $bz-dark: #222;
         margin-bottom: 0;
         font-size: 0.75rem;
     }
+    box-shadow: 0 0 20px rgba(#fff, .3);
 }
 
-.bz-white {
-    background-color: #fff;
+.bz-content {
+    background: #fff;
+    padding-top: 15px;
+    box-shadow: 0 0 20px rgba(#fff, .7);
 }
 
 .bz-footer {
@@ -49,6 +54,7 @@ $bz-dark: #222;
         color: #444;
     }
     border-top: 4px solid $topbar-bg-color;
+    box-shadow: 0 0 20px rgba(#000, .9);
 }
 
 .bz-footer-logo {
