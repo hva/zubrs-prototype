@@ -35,8 +35,14 @@
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
+// Bz styles {
+	$primary-color: #87060A;
+	$very-top-bg: #333;
+// } Bz styles
+
 // We use these to control various global styles
-$body-bg: #ddd;
+$body-bg: scale-color($primary-color, $lightness: 0%);
+$body-bg: #000;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
