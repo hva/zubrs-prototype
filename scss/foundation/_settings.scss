@@ -1147,13 +1147,13 @@ $topbar-height: 40px;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
-$topbar-link-color-hover: $primary-color;
+$topbar-link-color-hover: #fff;
 $topbar-link-color-active: $primary-color;
 $topbar-link-color-active-hover: $primary-color;
 $topbar-link-weight: bold;
 $topbar-link-font-size: rem-calc(12);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg-hover: #fff;
+$topbar-link-bg-hover: $primary-color;
 $topbar-link-bg-active: #fff;
 $topbar-link-bg-active-hover: #fff;
 // $topbar-link-font-family: $body-font-family;

@@ -2020,8 +2020,8 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.alert:hover {
         background: #d42b0f; }
   .top-bar-section ul li:hover > a {
-    background: white;
-    color: #87060a; }
+    background: #87060a;
+    color: white; }
   .top-bar-section ul li.active > a {
     background: white;
     color: #87060a; }
@@ -2127,14 +2127,14 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: white;
-      color: #87060a; }
+      background: #87060a;
+      color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 13.33333px;
       line-height: 40px;
       background: #5a0407; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: white; }
+        background: #87060a; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 13.33333px;
       line-height: 40px;
@@ -2207,8 +2207,8 @@ meta.foundation-mq-topbar {
         left: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: white;
-    color: #87060a; }
+    background: #87060a;
+    color: white; }
   .no-js .top-bar-section ul li:active > a {
     background: white;
     color: #87060a; }
