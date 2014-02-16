@@ -2657,9 +2657,9 @@ blockquote p {
 
   .show-for-print {
     display: inherit !important; } }
-/* bz-very-top */
 .bz-very-top {
-  background: #333333; }
+  background: #222222;
+  border-bottom: 2px solid #aa080d; }
   .bz-very-top a, .bz-very-top span {
     color: #999;
     line-height: 1.8rem; }
@@ -2668,7 +2668,6 @@ blockquote p {
   .bz-very-top .inline-list {
     margin: 0; }
 
-/* site */
 .top-bar input {
   height: auto;
   padding-top: 0.35rem;
@@ -2684,8 +2683,17 @@ blockquote p {
   background-color: #fff; }
 
 .bz-footer {
-  background-color: #666;
-  padding-top: 10px; }
-  .bz-footer p {
+  background-color: #222222;
+  padding-top: 10px;
+  border-top: 4px solid #5a0407; }
+  .bz-footer a {
     font-size: 0.8rem;
-    color: #fff; }
+    color: #666; }
+  .bz-footer li {
+    font-size: 0.8rem;
+    color: #444; }
+
+.bz-footer-logo {
+  background: url(img/logo.png) center 0 no-repeat;
+  width: 120px;
+  height: 180px; }

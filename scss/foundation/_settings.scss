@@ -35,10 +35,7 @@
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
-// Bz styles {
-	$primary-color: #87060A;
-	$very-top-bg: #333;
-// } Bz styles
+$primary-color: #87060A;
 
 // We use these to control various global styles
 $body-bg: scale-color($primary-color, $lightness: 0%);
@@ -56,7 +53,7 @@ $body-bg: scale-color($primary-color, $lightness: 0%);
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+//$primary-color: #87060A;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;

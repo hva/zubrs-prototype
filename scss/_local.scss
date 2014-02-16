@@ -1,6 +1,7 @@
-/* bz-very-top */
+$bz-dark: #222;
+
 .bz-very-top {
-    background: $very-top-bg;
+    background: $bz-dark;
 
     a,span {
         color: #999;
@@ -14,11 +15,8 @@
     .inline-list {
         margin: 0;
     }
+    border-bottom: 2px solid scale-color($primary-color, $lightness: 10%);
 }
-
-
-
-/* site */
 
 .top-bar {
     input {
@@ -40,11 +38,21 @@
 }
 
 .bz-footer {
-    background-color: #666;
+    background-color: $bz-dark;
     padding-top: 10px;
-    p {
+    a {
         font-size: 0.8rem;
-        color: #fff;
-    }    
+        color: #666;
+    }
+    li {
+        font-size: 0.8rem;
+        color: #444;
+    }
+    border-top: 4px solid $topbar-bg-color;
 }
 
+.bz-footer-logo {
+    background: url(img/logo.png) center 0 no-repeat;
+    width: 120px;
+    height: 180px;
+}
