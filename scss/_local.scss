@@ -1,6 +1,13 @@
+/* body */
+body {
+    background-image: url(img/body_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1.8rem;
+}
+
 /* bz-very-top */
 .bz-very-top {
-    background: #333;
+    background: $very-top-bg;
 
     a,span {
         color: #999;
