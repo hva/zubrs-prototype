@@ -2,42 +2,39 @@
 
 {% block content %}
 
-<div class="row bz-white">
-    <div class="small-5 columns">
-        <h5></h5>
-        <ul class="example-orbit" data-orbit data-options="slide_number:false">
-            {% include 'orbit/slide.html' with {'img': 'pic010.jpg', 'caption': 'Описание 1'} %}
-            {% include 'orbit/slide.html' with {'img': 'pic013.jpg', 'caption': 'Описание 2'} %}
-            {% include 'orbit/slide.html' with {'img': 'pic016.jpg', 'caption': 'Описание 3'} %}
-            {% include 'orbit/slide.html' with {'img': 'pic017.jpg', 'caption': 'Описание 4'} %}
-            {% include 'orbit/slide.html' with {'img': 'pic019.jpg', 'caption': 'Описание 5'} %}
-            {% include 'orbit/slide.html' with {'img': 'pic020.jpg', 'caption': 'Описание 6'} %}
-        </ul>
-    </div>
-
-    <div class="small-3 columns">
-        <h5><a href="news.php">Новости</a></h5>
-        <ul class="no-bullet">
-            <li>
-                <a href="news.php?id=1">"Брестские зубры" успешно завершили сезон 2013г. Поздравляем!</a>
-                <hr />
-            </li>
-            <li>
-                <a href="news.php?id=2">Кубок Европы 2014 пройдет в г. Бресте.</a>
-                <hr />
-            </li>
-            <li>
-                <a href="news.php?id=3">Брестские зубры - победители Первенства Беларуси среди юниоров.</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="small-4 columns">
-        <h5><a href="news.php">Видео</a></h5>
-        <div class="flex-video">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/eoItalLp9yo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
+<div class="small-5 columns">
+    <ul class="example-orbit" data-orbit data-options="slide_number:false">
+        {% include 'orbit/slide.html' with {'img': 'pic010.jpg', 'caption': 'Описание 1'} %}
+        {% include 'orbit/slide.html' with {'img': 'pic013.jpg', 'caption': 'Описание 2'} %}
+        {% include 'orbit/slide.html' with {'img': 'pic016.jpg', 'caption': 'Описание 3'} %}
+        {% include 'orbit/slide.html' with {'img': 'pic017.jpg', 'caption': 'Описание 4'} %}
+        {% include 'orbit/slide.html' with {'img': 'pic019.jpg', 'caption': 'Описание 5'} %}
+        {% include 'orbit/slide.html' with {'img': 'pic020.jpg', 'caption': 'Описание 6'} %}
+    </ul>
 </div>
+
+<div class="small-3 columns">
+    <h5><a href="news.php">Новости</a></h5>
+    <ul class="no-bullet">
+        <li>
+            <a href="news.php?id=1">"Брестские зубры" успешно завершили сезон 2013г. Поздравляем!</a>
+            <hr />
+        </li>
+        <li>
+            <a href="news.php?id=2">Кубок Европы 2014 пройдет в г. Бресте.</a>
+            <hr />
+        </li>
+        <li>
+            <a href="news.php?id=3">Брестские зубры - победители Первенства Беларуси среди юниоров.</a>
+        </li>
+    </ul>
+</div>
+
+<div class="small-4 columns">
+    <h5><a href="news.php">Видео</a></h5>
+    <div class="flex-video">
+        <iframe width="640" height="360" src="//www.youtube.com/embed/eoItalLp9yo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 {% endblock %}

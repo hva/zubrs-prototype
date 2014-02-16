@@ -2657,9 +2657,10 @@ blockquote p {
 
   .show-for-print {
     display: inherit !important; } }
+/* _base.html */
 .bz-very-top {
   background: #222222;
-  border-bottom: 2px solid #aa080d; }
+  border-bottom: 2px solid #99070b; }
   .bz-very-top a, .bz-very-top span {
     color: #999;
     line-height: 1.8rem; }
@@ -2668,24 +2669,29 @@ blockquote p {
   .bz-very-top .inline-list {
     margin: 0; }
 
-.top-bar input {
-  height: auto;
-  padding-top: 0.35rem;
-  padding-bottom: 0.35rem;
-  font-size: 0.75rem; }
-.top-bar .button {
-  padding-top: 0.45rem;
-  padding-bottom: 0.35rem;
-  margin-bottom: 0;
-  font-size: 0.75rem; }
+.top-bar {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  .top-bar input {
+    height: auto;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.75rem; }
+  .top-bar .button {
+    padding-top: 0.45rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0;
+    font-size: 0.75rem; }
 
-.bz-white {
-  background-color: #fff; }
+.bz-content {
+  background: #fff;
+  padding-top: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
 
 .bz-footer {
   background-color: #222222;
   padding-top: 10px;
-  border-top: 4px solid #5a0407; }
+  border-top: 4px solid #5a0407;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); }
   .bz-footer a {
     font-size: 0.8rem;
     color: #666; }
