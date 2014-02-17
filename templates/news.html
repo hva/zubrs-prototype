@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<div class="small-12 columns">
+    <h1>{{ item.header }}</h1>
+    {{ item.data|data|markdown }}
+</div>
+
+{% endblock %}

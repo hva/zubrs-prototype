@@ -22,4 +22,22 @@ class Bz_Twig_Extension extends Twig_Extension {
 				),
 			);
 	}
+
+	public function getFilters()
+	{
+		return array(
+			'data' => new Twig_Filter_Method($this, 'filterData'),
+			'markdown' => new Twig_Filter_Method($this, 'filterMarkdown', array('is_safe' => array('html'))),
+			);
+	}
+
+	// filters
+
+	public function filterData($value) {
+		return file_get_contents('data/' . $value);
+	}
+
+	public function filterMarkdown($value) {
+		return Markdown($value);
+	}
 }

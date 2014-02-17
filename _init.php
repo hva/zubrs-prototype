@@ -1,5 +1,6 @@
 <?php
 require 'vendor/Twig/Autoloader.php';
+require 'vendor/markdown.php';
 
 Twig_Autoloader::register();
 
