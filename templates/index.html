@@ -15,18 +15,15 @@
 
 <div class="small-3 columns">
     <h5><a href="news.php">Новости</a></h5>
-    <ul class="no-bullet">
+    <ul class="side-nav">
+        {% for id, x in news %}
         <li>
-            <a href="news.php?id=1">"Брестские зубры" успешно завершили сезон 2013г. Поздравляем!</a>
-            <hr />
+            <a href="news.php?id={{ id }}">{{ x.header }}</a>
         </li>
-        <li>
-            <a href="news.php?id=2">Кубок Европы 2014 пройдет в г. Бресте.</a>
-            <hr />
-        </li>
-        <li>
-            <a href="news.php?id=3">Брестские зубры - победители Первенства Беларуси среди юниоров.</a>
-        </li>
+        {% if not loop.last %}
+        <li class="divider"></li>
+        {% endif %}
+        {% endfor %}
     </ul>
 </div>
 

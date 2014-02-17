@@ -18,7 +18,11 @@ class Bz_Twig_Extension extends Twig_Extension {
 				array('url' => 'competitions.php', 'title' => 'соревнования', 'active' => ($controller === 'competitions')),
 				array('url' => 'management.php', 'title' => 'руководство', 'active' => ($controller === 'management')),
 				array('url' => 'history.php', 'title' => 'история', 'active' => ($controller === 'history')),
-
+				),
+			'news' => array(
+				1000 => array('data' => 'news/1000.md', 'header' => '"Брестские зубры" успешно завершили сезон 2013г. Поздравляем!'),
+				1001 => array('data' => 'news/1001.md', 'header' => 'Кубок Европы 2014 пройдет в г. Бресте'),
+				1002 => array('data' => 'news/1002.md', 'header' => 'Брестские зубры - победители Первенства Беларуси среди юниоров'),
 				),
 			);
 	}

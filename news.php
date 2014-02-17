@@ -1,9 +1,10 @@
 <?php
 require '_init.php';
 
-$item = array(
-    'header' => '"Брестские зубры" успешно завершили сезон 2013г. Поздравляем!',
-    'data' => 'news/1000.md',
-    );
+$globals = $twig->getGlobals();
+$news = $globals['news'];
+$ids = array_keys($news);
+$id = isset($_GET['id']) ? $_GET['id'] : array_shift($ids);
+$item = $news[$id];
 
 echo $twig->render('news.html', array('item' => $item));
