@@ -4,12 +4,12 @@
 
 <div class="small-5 columns">
     <ul class="example-orbit" data-orbit data-options="slide_number:false">
-        {% include 'orbit/slide.html' with {'img': 'pic010.jpg', 'caption': 'Описание 1'} %}
-        {% include 'orbit/slide.html' with {'img': 'pic013.jpg', 'caption': 'Описание 2'} %}
-        {% include 'orbit/slide.html' with {'img': 'pic016.jpg', 'caption': 'Описание 3'} %}
-        {% include 'orbit/slide.html' with {'img': 'pic017.jpg', 'caption': 'Описание 4'} %}
-        {% include 'orbit/slide.html' with {'img': 'pic019.jpg', 'caption': 'Описание 5'} %}
-        {% include 'orbit/slide.html' with {'img': 'pic020.jpg', 'caption': 'Описание 6'} %}
+        {% for x in load('orbit') %}
+        <li>
+            <img src="media/{{ x.img }}" />
+            <div class="orbit-caption">{{ x.caption|default('Изображение') }}</div>
+        </li>
+        {% endfor %}
     </ul>
 </div>
 
