@@ -72,7 +72,11 @@ $bz-dark: #222;
         a:not(.button) {
             padding: rem-calc(5 10);
             &:hover,
-            &:focus { background-color: #f6f6f6 }
+            &:focus { background-color: #f9f9f9 }
+        }
+
+        &.active > a:first-child:not(.button) {
+            background-color: #eee;
         }
     }
 }
