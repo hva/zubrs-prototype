@@ -1018,6 +1018,24 @@ dialog[open] {
       list-style: none;
       border-top-color: #dddddd; }
 
+/* Image Thumbnails */
+.th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px white;
+  max-width: 100%;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  transition: all 200ms ease-out; }
+  .th:hover, .th:focus {
+    -webkit-box-shadow: 0 0 6px 1px rgba(135, 6, 10, 0.5);
+    box-shadow: 0 0 6px 1px rgba(135, 6, 10, 0.5); }
+  .th.radius {
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+
 .row {
   width: 100%;
   margin-left: auto;
@@ -2711,7 +2729,7 @@ blockquote p {
 .bz-content {
   background: #fff;
   padding-top: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
 
 .bz-footer {
   background-color: #222222;

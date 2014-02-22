@@ -4,6 +4,13 @@
 
 <div class="small-12 columns">
     <h1>{{ item.title }}</h1>
+
+    {% if item.img %}
+    <p>
+        <img src="{{ item.img }}" />
+    </p>
+    {% endif %}
+
     {{ item.body|markdown }}
 </div>
 
