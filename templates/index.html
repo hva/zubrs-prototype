@@ -7,7 +7,7 @@
         {% for x in load('orbit') %}
         <li>
             <img src="media/{{ x.img }}" />
-            <div class="orbit-caption">{{ x.caption|default('Изображение') }}</div>
+            <div class="orbit-caption">{{ x.caption }}</div>
         </li>
         {% endfor %}
     </ul>
@@ -30,7 +30,7 @@
 <div class="small-4 columns">
     <h5><a href="news.php">Видео</a></h5>
     <div class="flex-video">
-        <iframe width="640" height="360" src="//www.youtube.com/embed/eoItalLp9yo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="360" src="{{ load('video')|first.src }}" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
