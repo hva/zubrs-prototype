@@ -6,7 +6,7 @@
     <ul class="example-orbit" data-orbit data-options="slide_number:false">
         {% for x in load('orbit') %}
         <li>
-            <img src="media/{{ x.img }}" />
+            <img src="{{ x.img }}" />
             <div class="orbit-caption">{{ x.caption }}</div>
         </li>
         {% endfor %}

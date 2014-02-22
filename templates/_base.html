@@ -69,11 +69,13 @@
         </div>
         <div class="small-8 columns end">
             <div class="row">
-                <ul class="inline-list">
-                    {% for x in load('menu') %}
-                    <li><a href="{{ x.url }}">{{ x.title|title }}</a></li>
-                    {% endfor %}
-                </ul>
+                <div class="small-12 columns">
+                    <ul class="inline-list">
+                        {% for x in load('menu') %}
+                        <li><a href="{{ x.url }}">{{ x.title|title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
             <div class="row">
                 <div class="small-6 columns">
