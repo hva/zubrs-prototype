@@ -35,8 +35,8 @@
             <nav class="top-bar">
                 <section class="top-bar-section">
                     <ul class="left">
-                        {% for x in topMenu %}
-                        <li{% if x.active %} class="active"{% endif %}><a href="{{ x.url }}">{{ x.title|upper }}</a></li>
+                        {% for x in load('menu') %}
+                        <li{% if script == x.url %} class="active"{% endif %}><a href="{{ x.url }}">{{ x.title|upper }}</a></li>
                         {% endfor %}
                     </ul>
                 </section>
@@ -70,7 +70,7 @@
         <div class="small-8 columns end">
             <div class="row">
                 <ul class="inline-list">
-                    {% for x in topMenu %}
+                    {% for x in load('menu') %}
                     <li><a href="{{ x.url }}">{{ x.title|title }}</a></li>
                     {% endfor %}
                 </ul>

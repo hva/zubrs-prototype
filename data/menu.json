@@ -1,0 +1,7 @@
+[
+{"url": "news.php", "title": "новости"},
+{"url": "teams.php", "title": "команды"},
+{"url": "competitions.php", "title": "соревнования"},
+{"url": "management.php", "title": "руководство"},
+{"url": "history.php", "title": "история"}
+]
