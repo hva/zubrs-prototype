@@ -1006,9 +1006,9 @@ dialog[open] {
       display: block;
       color: #87060a; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-        color: #5a0407; }
+        color: #87060a; }
     .side-nav li.active > a:first-child:not(.button) {
-      color: #f10b12;
+      color: #999999;
       font-weight: normal;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
@@ -2748,3 +2748,35 @@ blockquote p {
   background: url(img/logo.png) center 0 no-repeat;
   width: 120px;
   height: 180px; }
+
+.bz-side-nav {
+  display: block;
+  margin: 0;
+  padding: 0.875rem 0;
+  list-style-type: none;
+  list-style-position: inside;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  .bz-side-nav li {
+    margin: 0 0 0.4375rem 0;
+    font-size: 0.875rem; }
+    .bz-side-nav li a:not(.button) {
+      display: block;
+      color: #87060a; }
+      .bz-side-nav li a:not(.button):hover, .bz-side-nav li a:not(.button):focus {
+        color: #87060a; }
+    .bz-side-nav li.active > a:first-child:not(.button) {
+      color: #999999;
+      font-weight: normal;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    .bz-side-nav li.divider {
+      border-top: 1px solid;
+      height: 0;
+      padding: 0;
+      list-style: none;
+      border-top-color: #dddddd; }
+  .bz-side-nav li {
+    margin: 0; }
+    .bz-side-nav li a:not(.button) {
+      padding: 0.3125rem 0.625rem; }
+      .bz-side-nav li a:not(.button):hover, .bz-side-nav li a:not(.button):focus {
+        background-color: #f6f6f6; }

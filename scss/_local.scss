@@ -63,3 +63,16 @@ $bz-dark: #222;
     width: 120px;
     height: 180px;
 }
+
+.bz-side-nav {
+    @include side-nav();
+
+    li {
+        margin: 0;
+        a:not(.button) {
+            padding: rem-calc(5 10);
+            &:hover,
+            &:focus { background-color: #f6f6f6 }
+        }
+    }
+}
