@@ -1,0 +1,51 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<div class="small-2 columns">
+    <ul class="bz-side-nav">
+        {% for id, title in load('competitions') %}
+        <li{% if current == id %} class="active"{% endif %}>
+        <a href="/competitions.php?id={{ id }}">{{ title|upper }}</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
+<div class="small-10 columns">
+    <h1>{{ load('competitions')[current] }}</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Место</th>
+                <th>Хозяева</th>
+                <th>Гости</th>
+                <th>Результат</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>25.10</td>
+                <td>12:00</td>
+                <td>Брест</td>
+                <td>Брестские Зубры</td>
+                <td>Брестские Зубры 2</td>
+                <td>12:4</td>
+            </tr>
+            <tr>
+                <td>25.10</td>
+                <td>15:00</td>
+                <td>Логишин</td>
+                <td>Минск</td>
+                <td>Логишинские Волки</td>
+                <td>13:10</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}
