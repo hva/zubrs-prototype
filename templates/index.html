@@ -16,9 +16,9 @@
 <div class="small-3 columns">
     <h5><a href="news.php">Новости</a></h5>
     <ul class="side-nav">
-        {% for id, x in news %}
+        {% for id, x in load('news') %}
         <li>
-            <a href="news.php?id={{ id }}">{{ x.header }}</a>
+            <a href="news.php?id={{ id }}">{{ x.title }}</a>
         </li>
         {% if not loop.last %}
         <li class="divider"></li>

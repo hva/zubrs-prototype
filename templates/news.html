@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="small-12 columns">
-    <h1>{{ item.header }}</h1>
-    {{ item.data|data|markdown }}
+    <h1>{{ item.title }}</h1>
+    {{ item.body|markdown }}
 </div>
 
 {% endblock %}
