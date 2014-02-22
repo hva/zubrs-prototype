@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<div class="small-12 columns">
+    <h1>Новости</h1>
+    {% for id, x in load('news') %}
+    <h5><a href="news.php?id={{ id }}">{{ x.title }}</a></h5>
+    <p>{{ x.body|markdown|striptags|slice(0,230) }}...</p>
+    {% if not loop.last %}<hr />{% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}

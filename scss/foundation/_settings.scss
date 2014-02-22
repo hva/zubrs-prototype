@@ -167,7 +167,7 @@ $h1-font-size: rem-calc(30);
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
+$hr-border-color: #ddd;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
@@ -915,7 +915,7 @@ $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: -33%);
 // We use these to control border styles
 // $side-nav-divider-size: 1px;
 // $side-nav-divider-style: solid;
-$side-nav-divider-color: scale-color($primary-color, $lightness: 90%);
+$side-nav-divider-color: $hr-border-color;
 
 // Split Buttons
 
