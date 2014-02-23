@@ -1,5 +1,78 @@
 {
-  "1": "зубры",
-  "2": "зубры 2",
-  "3": "кадеты"
+  "1": {
+    "title": "зубры",
+    "players": [
+      {
+        "img": "//zubrs.brest.by/site/players/photos/ka4.jpg",
+        "name": "Кочурко Алексей",
+        "number": 19,
+        "position": "C,3B"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/pop.jpg",
+        "name": "Поплавский Андрей",
+        "number": 7,
+        "position": "P,OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/ogu.jpg",
+        "name": "Огулик Андрей",
+        "number": 28,
+        "position": "2B"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/vet.jpg",
+        "name": "Ветров Вадим",
+        "number": 33,
+        "position": "P,3B,OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/naz.jpg",
+        "name": "Назаренко Антон",
+        "number": 15,
+        "position": "OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/kar.jpg",
+        "name": "Карват Дмитрий",
+        "number": 17,
+        "position": "1B,OF"
+      }
+    ]
+  },
+  "2": {
+    "title": "зубры 2",
+    "players": [
+      {
+        "img": "//zubrs.brest.by/site/players/photos/ale.jpg",
+        "name": "Александров Алексей",
+        "number": 1,
+        "position": "3B,OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/los.jpg",
+        "name": "Лось Андрей",
+        "number": 5,
+        "position": "P,1B,OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/sok.jpg",
+        "name": "Сокол Сергей",
+        "number": 7,
+        "position": "2B,SS,OF"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/18.jpg",
+        "name": "Кашевский Илья",
+        "number": 11,
+        "position": "OF,P"
+      },
+      {
+        "img": "//zubrs.brest.by/site/players/photos/lyk.jpg",
+        "name": "Лукашевич Алексей",
+        "number": 77,
+        "position": "P,SS,OF"
+      }
+    ]
+  }
 }
