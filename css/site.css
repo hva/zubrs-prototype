@@ -1006,7 +1006,7 @@ dialog[open] {
       display: block;
       color: #87060a; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-        color: #87060a; }
+        color: #bc080e; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #333333;
       font-weight: normal;
@@ -2794,7 +2794,7 @@ blockquote p {
       display: block;
       color: #87060a; }
       .bz-side-nav li a:not(.button):hover, .bz-side-nav li a:not(.button):focus {
-        color: #87060a; }
+        color: #bc080e; }
     .bz-side-nav li.active > a:first-child:not(.button) {
       color: #333333;
       font-weight: normal;
@@ -2808,8 +2808,11 @@ blockquote p {
   .bz-side-nav li {
     margin: 0; }
     .bz-side-nav li a:not(.button) {
-      padding: 0.3125rem 0.625rem; }
+      padding: 0.3125rem 0.625rem;
+      color: #333; }
       .bz-side-nav li a:not(.button):hover, .bz-side-nav li a:not(.button):focus {
-        background-color: #f9f9f9; }
+        background-color: #eee;
+        color: #333; }
     .bz-side-nav li.active > a:first-child:not(.button) {
-      background-color: #eee; }
+      font-weight: bold;
+      color: #87060a; }

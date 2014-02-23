@@ -71,12 +71,14 @@ $bz-dark: #222;
         margin: 0;
         a:not(.button) {
             padding: rem-calc(5 10);
+            color: #333;
             &:hover,
-            &:focus { background-color: #f9f9f9 }
-        }
+            &:focus { background-color: #eee; color: #333; }
+       }
 
-        &.active > a:first-child:not(.button) {
-            background-color: #eee;
-        }
+       &.active > a:first-child:not(.button) {
+        font-weight: bold;
+        color: $primary-color;
     }
+}
 }
