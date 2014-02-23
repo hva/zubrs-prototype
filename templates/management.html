@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+{% set management = load('management') %}
+
+<div class="small-12 columns">
+    <h1>Руководство клуба</h1>
+    <ul class="small-block-grid-3">
+        {% for x in management %}
+        <li>
+            {% if x.img %}
+            <div class="row">
+                <div class="small-4 columns">
+                    <img class="th left" src="{{ x.img }}" />
+                </div>
+                <div class="small-8 columns">
+                    <h5>{{ x.title }}</h5>
+                    <p>{{ x.name }}</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="small-12 columns">
+                    <h5>{{ x.title }}</h5>
+                    <p>{{ x.name }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

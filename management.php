@@ -1,4 +1,4 @@
 <?php
 require '_init.php';
 
-echo $twig->render('index.html');
+echo $twig->render('management.html');
