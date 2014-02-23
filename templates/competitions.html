@@ -23,25 +23,17 @@
 
     <h2 class="subheader">Итоговая таблица</h2>
     <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Команда</th>
-                <th>Очки</th>
-            </tr>
-        </thead>
         <tbody>
             {% for x in competition.table %}
             <tr>
                 <td>{{ loop.index }}.</td>
                 <td>{{ teams[x.team] }}</td>
-                <td>{{ x.points }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
 
-    <h2 class="subheader">Результаты игр</h2>
+    <h2 class="subheader">Результаты</h2>
     <table>
         <thead>
             <tr>
