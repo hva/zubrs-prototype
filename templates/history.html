@@ -1,0 +1,29 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+{% set items = load('history') %}
+{% set item = items[current] %}
+
+<div class="small-2 columns">
+    <ul class="bz-side-nav">
+        {% for id, x in items %}
+        <li{% if current == id %} class="active"{% endif %}>
+        <a href="/history.php?id={{ id }}">{{ x.menu_title|default(x.title)|upper }}</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
+<div class="small-10 columns">
+    <h1>{{ item.title|capitalize }}</h1>
+
+    {% if item.img %}
+    <p><img src="{{ item.img }}" class="th" /></p>
+    {% endif %}
+
+    {{ item.body|markdown }}
+
+</div>
+
+{% endblock %}

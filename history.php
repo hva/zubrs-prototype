@@ -1,4 +1,5 @@
 <?php
 require '_init.php';
 
-echo $twig->render('index.html');
+$current = isset($_GET['id']) ? $_GET['id'] : 1;
+echo $twig->render('history.html', array('current' => $current));
