@@ -1,8 +1,13 @@
 <?php
 
 function load_json($value) {
-	$json = file_get_contents('data/' . $value . '.json');
-	return json_decode($json, true);
+	$file = 'data/' . $value . '.json';
+	$text = file_get_contents($file);
+	$json = json_decode($text, true);
+	if ($json === null) {
+		throw new Exception("bad json at '$file'");
+	}
+	return $json;
 }
 
 function filter_markdown($value) {

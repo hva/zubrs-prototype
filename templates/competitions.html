@@ -2,19 +2,46 @@
 
 {% block content %}
 
+{% set context = load('competitions') %}
+{% set competitions = context.competitions %}
+{% set competition = context.competitions[current] %}
+{% set teams = context.teams %}
+{% set places = context.places %}
+
 <div class="small-2 columns">
     <ul class="bz-side-nav">
-        {% for id, title in load('competitions') %}
+        {% for id, c in competitions %}
         <li{% if current == id %} class="active"{% endif %}>
-        <a href="/competitions.php?id={{ id }}">{{ title|upper }}</a>
+        <a href="/competitions.php?id={{ id }}">{{ c.title|upper }}</a>
     </li>
     {% endfor %}
 </ul>
 </div>
 
 <div class="small-10 columns">
-    <h1>{{ load('competitions')[current] }}</h1>
+    <h1>{{ competition.title }}</h1>
 
+    <h2 class="subheader">Итоговая таблица</h2>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Команда</th>
+                <th>Очки</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in competition.table %}
+            <tr>
+                <td>{{ loop.index }}.</td>
+                <td>{{ teams[x.team] }}</td>
+                <td>{{ x.points }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2 class="subheader">Результаты игр</h2>
     <table>
         <thead>
             <tr>
@@ -27,22 +54,16 @@
             </tr>
         </thead>
         <tbody>
+            {% for x in competition.games %}
             <tr>
-                <td>25.10</td>
-                <td>12:00</td>
-                <td>Брест</td>
-                <td>Брестские Зубры</td>
-                <td>Брестские Зубры 2</td>
-                <td>12:4</td>
+                <td>{{ x.date|date('F j') }}</td>
+                <td>{{ x.date|date('H:i') }}</td>
+                <td>{{ places[x.place] }}</td>
+                <td>{{ teams[x.team_home] }}</td>
+                <td>{{ teams[x.team_away] }}</td>
+                <td>{{ x.score_home ~ ':' ~ x.score_away }}</td>
             </tr>
-            <tr>
-                <td>25.10</td>
-                <td>15:00</td>
-                <td>Логишин</td>
-                <td>Минск</td>
-                <td>Логишинские Волки</td>
-                <td>13:10</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 

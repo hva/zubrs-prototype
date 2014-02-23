@@ -1,8 +1,26 @@
 [
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic010.JPG", "caption": "Описание 1"},
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic013.JPG", "caption": "Описание 2"},
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic016.JPG", "caption": "Описание 3"},
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic017.JPG", "caption": "Описание 4"},
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic019.JPG", "caption": "Описание 5"},
-{"img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic020.JPG", "caption": "Описание 6"}
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic010.JPG",
+    "caption": "Описание 1"
+  },
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic013.JPG",
+    "caption": "Описание 2"
+  },
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic016.JPG",
+    "caption": "Описание 3"
+  },
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic017.JPG",
+    "caption": "Описание 4"
+  },
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic019.JPG",
+    "caption": "Описание 5"
+  },
+  {
+    "img": "//zubrs.brest.by/components/com_datsogallery/img_originals/pic020.JPG",
+    "caption": "Описание 6"
+  }
 ]
