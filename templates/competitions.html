@@ -56,7 +56,7 @@
         <tbody>
             {% for x in competition.games %}
             <tr>
-                <td>{{ x.date|date('F j') }}</td>
+                <td>{{ x.date|date('j.m.Y') }}</td>
                 <td>{{ x.date|date('H:i') }}</td>
                 <td>{{ places[x.place] }}</td>
                 <td>{{ teams[x.team_home] }}</td>

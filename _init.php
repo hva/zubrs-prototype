@@ -1,5 +1,5 @@
 <?php
-setlocale(LC_ALL, 'ru_RU.UTF-8');
+// setlocale(LC_ALL, 'Russian_Russia.1251');
 date_default_timezone_set('Europe/Minsk');
 
 require 'vendor/Twig/Autoloader.php';
