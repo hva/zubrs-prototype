@@ -18,5 +18,9 @@
   {
     "url": "history.php",
     "title": "история"
+  },
+  {
+    "url": "photo.php",
+    "title": "фото"
   }
 ]

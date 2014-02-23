@@ -1,0 +1,28 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+{% set galleries = load('photo') %}
+{% set gallery = galleries[current] %}
+{% set images = gallery.images %}
+
+<div class="small-2 columns">
+    <ul class="bz-side-nav">
+        {% for id, x in galleries %}
+        <li{% if current == id %} class="active"{% endif %}>
+            <a href="/photo.php?id={{ id }}">{{ x.title|upper }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="small-10 columns">
+    <h1>{{ gallery.title|capitalize }}</h1>
+    <ul class="small-block-grid-4 clearing-thumbs" data-clearing>
+        {% for x in images %}
+        <li><a class="th" href="{{ x.original }}"><img src="{{ x.thumbnail }}" /></a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
