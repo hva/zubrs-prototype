@@ -5,7 +5,8 @@
   },
   {
     "url": "teams.php",
-    "title": "команды"
+    "title": "команды",
+    "sub": "teams"
   },
   {
     "url": "competitions.php",
@@ -17,10 +18,12 @@
   },
   {
     "url": "history.php",
-    "title": "история"
+    "title": "история",
+    "sub": "history"
   },
   {
     "url": "photo.php",
-    "title": "фото"
+    "title": "фото",
+    "sub": "photo"
   }
 ]
