@@ -2,22 +2,40 @@
 
 $bz-dark: #222;
 
+body {
+    background: url(img/bg.jpg) center 1.65rem no-repeat $primary-color;
+}
+
 .bz-very-top {
     background: $bz-dark;
 
     a,span {
         color: #999;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
     }
 
     a {
         font-size: 0.8rem;
     }
 
+    span {
+        font-size: 0.9rem;
+    }
+
     .inline-list {
         margin: 0;
     }
-    border-bottom: 2px solid scale-color($primary-color, $lightness: 5%);
+    border-bottom: 0.15rem solid scale-color($primary-color, $lightness: 5%);
+}
+
+.bz-logo {
+    height:80px;
+    a {
+        display: block;
+        width: 300px;
+        height: 80px;
+    }
 }
 
 .top-bar {

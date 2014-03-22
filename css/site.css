@@ -3208,16 +3208,29 @@ blockquote p {
   .show-for-print {
     display: inherit !important; } }
 /* _base.html */
+body {
+  background: url(img/bg.jpg) center 1.65rem no-repeat #87060a; }
+
 .bz-very-top {
   background: #222222;
-  border-bottom: 2px solid #99070b; }
+  border-bottom: 0.15rem solid #99070b; }
   .bz-very-top a, .bz-very-top span {
     color: #999;
-    line-height: 1.8rem; }
+    line-height: 1.5rem;
+    font-size: 0.8rem; }
   .bz-very-top a {
     font-size: 0.8rem; }
+  .bz-very-top span {
+    font-size: 0.9rem; }
   .bz-very-top .inline-list {
     margin: 0; }
+
+.bz-logo {
+  height: 80px; }
+  .bz-logo a {
+    display: block;
+    width: 300px;
+    height: 80px; }
 
 .top-bar {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
