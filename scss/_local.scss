@@ -84,7 +84,10 @@ $bz-dark: #222;
 }
 
 .top-bar-section li:not(.has-form) a.active:not(.button) {
-    background: $primary-color;
+    background: scale-color($primary-color, $lightness: -16%);
+    &:hover {
+        background: $primary-color;
+    }
 }
 
 /***** Fix Block Grid and Clearing Compatibility *****/

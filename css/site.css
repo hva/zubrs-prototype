@@ -3293,7 +3293,9 @@ blockquote p {
       color: #87060a; }
 
 .top-bar-section li:not(.has-form) a.active:not(.button) {
-  background: #87060a; }
+  background: #710508; }
+  .top-bar-section li:not(.has-form) a.active:not(.button):hover {
+    background: #87060a; }
 
 /***** Fix Block Grid and Clearing Compatibility *****/
 [class*="block-grid-"] {

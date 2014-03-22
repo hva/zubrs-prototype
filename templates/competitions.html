@@ -2,11 +2,10 @@
 
 {% block content %}
 
-{% set context = load('competitions') %}
-{% set competitions = context.competitions %}
-{% set competition = context.competitions[current] %}
-{% set teams = context.teams %}
-{% set places = context.places %}
+{% set competitions = load('competitions') %}
+{% set competition = competitions[current] %}
+{% set teams = load('teams') %}
+{% set places = load('places') %}
 
 <div class="small-2 columns">
     <ul class="bz-side-nav">
@@ -27,7 +26,7 @@
             {% for x in competition.table %}
             <tr>
                 <td>{{ loop.index }}.</td>
-                <td>{{ teams[x.team] }}</td>
+                <td>{{ teams[x.team].title }}</td>
             </tr>
             {% endfor %}
         </tbody>
@@ -50,9 +49,9 @@
             <tr>
                 <td>{{ x.date|date('j.m.Y') }}</td>
                 <td>{{ x.date|date('H:i') }}</td>
-                <td>{{ places[x.place] }}</td>
-                <td>{{ teams[x.team_home] }}</td>
-                <td>{{ teams[x.team_away] }}</td>
+                <td>{{ places[x.place].title }}</td>
+                <td>{{ teams[x.team_home].title }}</td>
+                <td>{{ teams[x.team_away].title }}</td>
                 <td>{{ x.score_home ~ ':' ~ x.score_away }}</td>
             </tr>
             {% endfor %}

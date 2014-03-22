@@ -10,7 +10,8 @@
   },
   {
     "url": "competitions.php",
-    "title": "соревнования"
+    "title": "соревнования",
+    "sub": "competitions"
   },
   {
     "url": "management.php",

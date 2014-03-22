@@ -40,8 +40,8 @@
                             <a href="{{ x.url }}"{% if script == x.url %} class="active"{% endif %} >{{ x.title|upper }}</a>
                             {% if x.sub %}
                             <ul class="dropdown">
-                                {% for zid, z in load(x.sub) %}
-                                <li><a href="{{ x.url }}?id={{ zid }}">{{ z.title|upper }}</a></li>
+                                {% for zid, z in load(x.sub) if not z.hidden %}
+                                    <li><a href="{{ x.url }}?id={{ zid }}">{{ z.title|upper }}</a></li>
                                 {% endfor %}
                             </ul>
                             {% endif %}

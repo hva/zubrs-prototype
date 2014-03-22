@@ -1,6 +1,6 @@
 {
   "1": {
-    "title": "зубры",
+    "title": "Брестские Зубры",
     "players": [
       {
         "img": "//zubrs.brest.by/site/players/photos/ka4.jpg",
@@ -41,7 +41,7 @@
     ]
   },
   "2": {
-    "title": "зубры 2",
+    "title": "Брестские Зубры-2",
     "players": [
       {
         "img": "//zubrs.brest.by/site/players/photos/ale.jpg",
@@ -74,5 +74,17 @@
         "position": "P,SS,OF"
       }
     ]
+  },
+  "3": {
+    "title": "Минск",
+    "hidden": true
+  },
+  "4": {
+    "title": "Сахарный Шторм",
+    "hidden": true
+  },
+  "5": {
+    "title": "Логишинские Волки",
+    "hidden": true
   }
 }
