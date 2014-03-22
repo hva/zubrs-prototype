@@ -2573,11 +2573,11 @@ meta.foundation-mq-topbar {
     background: #87060a;
     color: white; }
   .top-bar-section ul li.active > a {
-    background: white;
-    color: #87060a; }
+    background: #87060a;
+    color: white; }
     .top-bar-section ul li.active > a:hover {
-      background: white;
-      color: #87060a; }
+      background: #740509;
+      color: white; }
   .top-bar-section .has-form {
     padding: 13.33333px; }
   .top-bar-section .has-dropdown {
@@ -2688,10 +2688,10 @@ meta.foundation-mq-topbar {
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 13.33333px;
       line-height: 40px;
-      color: #87060a;
-      background: white; }
+      color: white;
+      background: #87060a; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: white; }
+        background: #740509; }
     .top-bar-section .has-dropdown > a {
       padding-right: 33.33333px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -2760,8 +2760,8 @@ meta.foundation-mq-topbar {
     background: #87060a;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: white;
-    color: #87060a; }
+    background: #87060a;
+    color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block; } }
 .text-left {
@@ -3291,6 +3291,9 @@ blockquote p {
     .bz-side-nav li.active > a:first-child:not(.button) {
       font-weight: bold;
       color: #87060a; }
+
+.top-bar-section li:not(.has-form) a.active:not(.button) {
+  background: #87060a; }
 
 /***** Fix Block Grid and Clearing Compatibility *****/
 [class*="block-grid-"] {

@@ -36,9 +36,8 @@
                 <section class="top-bar-section">
                     <ul class="left">
                         {% for x in load('menu') %}
-                        {% set cl %}{% if script == x.url %}active{% endif %}{% if x.sub %} has-dropdown{% endif %}{% endset %}
-                        <li{% if cl %} class="{{ cl }}"{% endif %}>
-                            <a href="{{ x.url }}">{{ x.title|upper }}</a>
+                        <li{% if x.sub %} class="has-dropdown"{% endif %}>
+                            <a href="{{ x.url }}"{% if script == x.url %} class="active"{% endif %} >{{ x.title|upper }}</a>
                             {% if x.sub %}
                             <ul class="dropdown">
                                 {% for zid, z in load(x.sub) %}
