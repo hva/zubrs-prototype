@@ -26,5 +26,9 @@
     "url": "photo.php",
     "title": "фото",
     "sub": "photo"
+  },
+  {
+    "url": "video.php",
+    "title": "видео"
   }
 ]

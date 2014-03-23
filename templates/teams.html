@@ -6,17 +6,17 @@
 {% set team = teams[current] %}
 {% set players = team.players %}
 
-<div class="small-3 columns">
+<div class="small-2 columns">
     <ul class="bz-side-nav">
         {% for id, x in teams if not x.hidden %}
         <li{% if current == id %} class="active"{% endif %}>
-            <a href="/teams.php?id={{ id }}">{{ x.title|upper }}</a>
+            <a href="/teams.php?id={{ id }}">{{ x.title_short|upper }}</a>
         </li>
         {% endfor %}
     </ul>
 </div>
 
-<div class="small-9 columns">
+<div class="small-10 columns">
     <h1>{{ team.title|capitalize }}</h1>
     <table>
         <tbody>

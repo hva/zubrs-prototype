@@ -1,6 +1,7 @@
 {
   "1": {
     "title": "Брестские Зубры",
+    "title_short": "зубры",
     "players": [
       {
         "img": "//zubrs.brest.by/site/players/photos/ka4.jpg",
@@ -42,6 +43,7 @@
   },
   "2": {
     "title": "Брестские Зубры-2",
+    "title_short": "зубры 2",
     "players": [
       {
         "img": "//zubrs.brest.by/site/players/photos/ale.jpg",
