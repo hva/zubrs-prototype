@@ -1,36 +1,57 @@
 {% extends '_base.html' %}
 
 {% block content %}
+<div class="small-12 columns">
+    <div class="row">
+        <div class="small-4 columns">
+            <ul class="example-orbit" data-orbit data-options="slide_number:false">
+                {% for id, x in news_main %}
+                <li>
+                    <img src="{{ x.img }}" />
+                    <a href="news.php?id={{ id }}"><div class="orbit-caption">{{ x.title }}</div></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-<div class="small-4 columns">
-    <ul class="example-orbit" data-orbit data-options="slide_number:false">
-        {% for x in load('orbit') %}
-        <li>
-            <img src="{{ x.img }}" />
-            <div class="orbit-caption">{{ x.caption }}</div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+        <div class="small-4 columns">
+            <h5><a href="news.php">Новости</a></h5>
+            <ul class="side-nav">
+                {% for id, x in news_main %}
+                <li>
+                    <a href="news.php?id={{ id }}">{{ x.title }}</a>
+                </li>
+                {% if not loop.last %}
+                <li class="divider"></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
 
-<div class="small-4 columns">
-    <h5><a href="news.php">Новости</a></h5>
-    <ul class="side-nav">
-        {% for id, x in load('news') %}
-        <li>
-            <a href="news.php?id={{ id }}">{{ x.title }}</a>
-        </li>
-        {% if not loop.last %}
-        <li class="divider"></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="small-4 columns">
-    <h5><a href="video.php">Видео</a></h5>
-    <div class="flex-video">
-        <iframe width="640" height="360" src="{{ load('video')|first.src }}" frameborder="0" allowfullscreen></iframe>
+        <div class="small-4 columns">
+            <h5><a href="video.php">Видео</a></h5>
+            <div class="flex-video">
+                <iframe width="640" height="360" src="{{ load('video')|first.src }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-4 columns">
+            <h5>Детский спорт</h5>
+            <ul class="side-nav">
+                {% for id, x in news_child %}
+                <li>
+                    <a href="news.php?id={{ id }}">{{ x.title }}</a>
+                </li>
+                {% if not loop.last %}
+                <li class="divider"></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="small-4 columns end">
+            <h5>Результаты</h5>
+        </div>
     </div>
 </div>
 
