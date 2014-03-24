@@ -6,6 +6,7 @@
 {% set competition = competitions[current] %}
 {% set teams = load('teams') %}
 {% set places = load('places') %}
+{% set games = load('games') %}
 
 <div class="small-2 columns">
     <ul class="bz-side-nav">
@@ -45,7 +46,7 @@
             </tr>
         </thead>
         <tbody>
-            {% for x in competition.games %}
+            {% for x in games if x.competition_id == current %}
             <tr>
                 <td>{{ x.date|date('j.m.Y') }}</td>
                 <td>{{ x.date|date('H:i') }}</td>

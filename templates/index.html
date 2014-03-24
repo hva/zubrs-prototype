@@ -1,10 +1,11 @@
 {% extends '_base.html' %}
 
 {% block content %}
+
 <div class="small-12 columns">
     <div class="row">
         <div class="small-4 columns">
-            <ul class="example-orbit" data-orbit data-options="slide_number:false">
+            <ul data-orbit data-options="slide_number:false">
                 {% for id, x in news_main %}
                 <li>
                     <img src="{{ x.img }}" />
@@ -37,7 +38,7 @@
     </div>
     <div class="row">
         <div class="small-4 columns">
-            <h5>Детский спорт</h5>
+            <h5><a href="news.php">Детский спорт</a></h5>
             <ul class="side-nav">
                 {% for id, x in news_child %}
                 <li>
@@ -49,10 +50,48 @@
                 {% endfor %}
             </ul>
         </div>
+
+        {% set competitions = load('competitions') %}
+        {% set games = load('games') %}
+        {% set teams = load('teams') %}
+
         <div class="small-4 columns end">
-            <h5>Результаты</h5>
+            <h5><a href="competitions.php">Результаты</a></h5>
+            <ul data-orbit data-options="slide_number:false;bullets:false;timer:false">
+                {% for x in games if (not teams[x.team_home].hidden or not teams[x.team_away].hidden) %}
+                <li>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="small-6 columns">
+                                <h6><a href="/competitions.php?id={{ x.competition_id }}">{{ competitions[x.competition_id].title }}</a></h6>
+                            </div>
+                            <div class="small-6 columns text-right">
+                                <span style="font-size: 0.8rem">{{ x.date|date('j.m.Y H:i') }}</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-8 columns">
+                                {{ teams[x.team_home].title }}
+                            </div>
+                            <div class="small-4 columns text-right">
+                                {{ x.score_home }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-8 columns">
+                                {{ teams[x.team_away].title }}
+                            </div>
+                            <div class="small-4 columns text-right">
+                                {{ x.score_away }}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    </div>
+
+     </div>
 </div>
 
 {% endblock %}

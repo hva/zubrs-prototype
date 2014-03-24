@@ -14,40 +14,6 @@
       {
         "team": 2
       }
-    ],
-    "games": [
-      {
-        "date": "25.10.2013 12:00",
-        "place": 1,
-        "team_home": 1,
-        "team_away": 2,
-        "score_home": 12,
-        "score_away": 4
-      },
-      {
-        "date": "25.10.2013 15:00",
-        "place": 4,
-        "team_home": 5,
-        "team_away": 3,
-        "score_home": 13,
-        "score_away": 10
-      },
-      {
-        "date": "26.10.2013 12:00",
-        "place": 4,
-        "team_home": 2,
-        "team_away": 5,
-        "score_home": 13,
-        "score_away": 3
-      },
-      {
-        "date": "25.10.2013 15:00",
-        "place": 4,
-        "team_home": 1,
-        "team_away": 3,
-        "score_home": 14,
-        "score_away": 4
-      }
     ]
   },
   "2": {
@@ -64,48 +30,6 @@
       },
       {
         "team": 5
-      }
-    ],
-    "games": [
-      {
-        "date": "17.10.2013 12:00",
-        "place": 3,
-        "team_home": 3,
-        "team_away": 4,
-        "score_home": 0,
-        "score_away": 20
-      },
-      {
-        "date": "17.10.2013 15:00",
-        "place": 3,
-        "team_home": 1,
-        "team_away": 5,
-        "score_home": 12,
-        "score_away": 11
-      },
-      {
-        "date": "18.10.2013 12:00",
-        "place": 3,
-        "team_home": 3,
-        "team_away": 1,
-        "score_home": 5,
-        "score_away": 7
-      },
-      {
-        "date": "18.10.2013 15:00",
-        "place": 3,
-        "team_home": 4,
-        "team_away": 5,
-        "score_home": 9,
-        "score_away": 2
-      },
-      {
-        "date": "19.10.2013 12:00",
-        "place": 3,
-        "team_home": 5,
-        "team_away": 3,
-        "score_home": 0,
-        "score_away": 9
       }
     ]
   }
