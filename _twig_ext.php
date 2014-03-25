@@ -22,7 +22,7 @@ class Bz_Twig_Extension extends Twig_Extension {
 
 	public function getGlobals() {
 		return array(
-			'localhost' => $_SERVER['SERVER_NAME'],
+			'localhost' => $_SERVER['SERVER_NAME'] === 'localhost',
 			'script' => substr($_SERVER['SCRIPT_NAME'], 1),
 			);
 	}
