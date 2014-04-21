@@ -2626,13 +2626,6 @@ meta.foundation-mq-topbar {
   .top-bar-section .has-dropdown {
     position: relative; }
     .top-bar-section .has-dropdown > a:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border: inset 5px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
-      border-left-style: solid;
       margin-right: 13.33333px;
       margin-top: -4.5px;
       position: absolute;
@@ -2735,18 +2728,6 @@ meta.foundation-mq-topbar {
       background: #87060a; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #740509; }
-    .top-bar-section .has-dropdown > a {
-      padding-right: 33.33333px !important; }
-      .top-bar-section .has-dropdown > a:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: inset 5px;
-        border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
-        border-top-style: solid;
-        margin-top: -2.5px;
-        top: 20px; }
     .top-bar-section .has-dropdown.moved {
       position: relative; }
       .top-bar-section .has-dropdown.moved > .dropdown {
