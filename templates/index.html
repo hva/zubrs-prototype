@@ -38,10 +38,21 @@
     </div>
     <div class="row">
         <div class="small-4 columns">
+            <ul data-orbit>
+                {% for id, x in news_child %}
+                <li data-bz-orbit-source="news-{{ id }}">
+                    <img src="{{ x.img }}" />
+                    <a href="news.php?id={{ id }}"><div class="orbit-caption">{{ x.title }}</div></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="small-4 columns">
             <h5><a href="news.php">Детский спорт</a></h5>
             <ul class="side-nav">
                 {% for id, x in news_child %}
-                <li>
+                <li data-bz-orbit-target="news-{{ id }}">
                     <a href="news.php?id={{ id }}">{{ x.title }}</a>
                 </li>
                 {% if not loop.last %}
