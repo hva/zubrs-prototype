@@ -3,6 +3,29 @@
 {% block content %}
 
 <div class="small-12 columns">
+
+    <div class="row">
+        {% set competitions = load('competitions') %}
+        {% set teams = load('teams') %}
+        <div class="small-12 columns">
+            <h5><a href="competitions.php">Результаты</a></h5>
+            <ul data-orbit data-options="bullets:false;timer:false">
+                {% for row in games|batch(3) %}
+                <li>
+                    <div class="row">
+                        {% for x in row %}
+                            <div class="small-4 columns{% if loop.last %} end{% endif %}">
+                                {% include 'inc/_game.html' with {'x': x, 'competitions': competitions, 'teams': teams} %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
     <div class="row">
         <div class="small-4 columns">
             <ul data-orbit>
@@ -38,7 +61,7 @@
     </div>
     <div class="row">
         <div class="small-4 columns">
-            <ul data-orbit>
+            <ul data-orbit data-options="timer_speed:6000">
                 {% for id, x in news_child %}
                 <li data-bz-orbit-source="news-{{ id }}">
                     <img src="{{ x.img }}" />
@@ -48,7 +71,7 @@
             </ul>
         </div>
 
-        <div class="small-4 columns">
+        <div class="small-4 columns end">
             <h5><a href="news.php">Детский спорт</a></h5>
             <ul class="side-nav">
                 {% for id, x in news_child %}
@@ -61,47 +84,6 @@
                 {% endfor %}
             </ul>
         </div>
-
-        {% set competitions = load('competitions') %}
-        {% set games = load('games') %}
-        {% set teams = load('teams') %}
-
-        <div class="small-4 columns end">
-            <h5><a href="competitions.php">Результаты</a></h5>
-            <ul data-orbit data-options="bullets:false;timer:false">
-                {% for x in games if (not teams[x.team_home].hidden or not teams[x.team_away].hidden) %}
-                <li>
-                    <div class="panel">
-                        <div class="row">
-                            <div class="small-6 columns">
-                                <h6><a href="/competitions.php?id={{ x.competition_id }}">{{ competitions[x.competition_id].title }}</a></h6>
-                            </div>
-                            <div class="small-6 columns text-right">
-                                <span style="font-size: 0.8rem">{{ x.date|date('j.m.Y H:i') }}</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="small-8 columns">
-                                {{ teams[x.team_home].title }}
-                            </div>
-                            <div class="small-4 columns text-right">
-                                {{ x.score_home }}
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="small-8 columns">
-                                {{ teams[x.team_away].title }}
-                            </div>
-                            <div class="small-4 columns text-right">
-                                {{ x.score_away }}
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
      </div>
 </div>
 
@@ -109,7 +91,7 @@
 
 {% block scripts %}
 <script>
-    var delay=400,
+    var delay = 400,
         setTimeoutConst,
         gotoLink = function(link) {
             if ((typeof link === 'string') && (link = $.trim(link)) != "") {
