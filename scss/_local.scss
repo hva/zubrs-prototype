@@ -29,12 +29,13 @@ body {
     border-bottom: 0.15rem solid scale-color($primary-color, $lightness: 5%);
 }
 
+$bz-logo-height: 120px;
 .bz-logo {
-    height:80px;
+    height: $bz-logo-height;
     a {
         display: block;
         width: 300px;
-        height: 80px;
+        height: $bz-logo-height;
     }
 }
 
