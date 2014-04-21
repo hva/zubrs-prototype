@@ -102,6 +102,22 @@ $bz-logo-height: 120px;
     }
 }
 
+.bz-panel {
+  @include panel(
+    $padding: 0 5px
+  );
+  p {
+    margin: 0;
+  }
+  &, p {
+    font-size: 0.8rem;
+  }
+  span {
+    color: #999;
+    font-size: 0.7rem;
+  }
+}
+
 .top-bar-section li:not(.has-form) a.active:not(.button) {
     background: scale-color($primary-color, $lightness: -16%);
     &:hover {

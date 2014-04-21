@@ -1,0 +1,20 @@
+<div class="bz-panel">
+    <p><a href="/competitions.php?id={{ x.competition_id }}">{{ competitions[x.competition_id].title }}</a></p>
+    <div class="row">
+        <div class="small-9 columns">
+            {{ teams[x.team_home].title }}
+        </div>
+        <div class="small-3 columns text-right">
+            {{ x.score_home }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-9 columns">
+            {{ teams[x.team_away].title }}
+        </div>
+        <div class="small-3 columns text-right">
+            {{ x.score_away }}
+        </div>
+    </div>
+    <p><span>{{ x.date|date('j.m.Y H:i') }}</span></p>
+</div>

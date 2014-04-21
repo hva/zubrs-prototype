@@ -3329,6 +3329,32 @@ body {
       font-weight: bold;
       color: #87060a; }
 
+.bz-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 0 5px;
+  background: #f2f2f2; }
+  .bz-panel > :first-child {
+    margin-top: 0; }
+  .bz-panel > :last-child {
+    margin-bottom: 0; }
+  .bz-panel h1, .bz-panel h2, .bz-panel h3, .bz-panel h4, .bz-panel h5, .bz-panel h6, .bz-panel p {
+    color: #333333; }
+  .bz-panel h1, .bz-panel h2, .bz-panel h3, .bz-panel h4, .bz-panel h5, .bz-panel h6 {
+    line-height: 1;
+    margin-bottom: 0.625rem; }
+    .bz-panel h1.subheader, .bz-panel h2.subheader, .bz-panel h3.subheader, .bz-panel h4.subheader, .bz-panel h5.subheader, .bz-panel h6.subheader {
+      line-height: 1.4; }
+  .bz-panel p {
+    margin: 0; }
+  .bz-panel, .bz-panel p {
+    font-size: 0.8rem; }
+  .bz-panel span {
+    color: #999;
+    font-size: 0.7rem; }
+
 .top-bar-section li:not(.has-form) a.active:not(.button) {
   background: #710508; }
   .top-bar-section li:not(.has-form) a.active:not(.button):hover {
