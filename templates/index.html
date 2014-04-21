@@ -7,7 +7,7 @@
         <div class="small-4 columns">
             <ul data-orbit>
                 {% for id, x in news_main %}
-                <li>
+                <li data-bz-orbit-source="news-{{ id }}">
                     <img src="{{ x.img }}" />
                     <a href="news.php?id={{ id }}"><div class="orbit-caption">{{ x.title }}</div></a>
                 </li>
@@ -19,7 +19,7 @@
             <h5><a href="news.php">Новости</a></h5>
             <ul class="side-nav">
                 {% for id, x in news_main %}
-                <li>
+                <li data-bz-orbit-target="news-{{ id }}">
                     <a href="news.php?id={{ id }}">{{ x.title }}</a>
                 </li>
                 {% if not loop.last %}
@@ -98,5 +98,25 @@
 
 {% block scripts %}
 <script>
+    var delay=400,
+        setTimeoutConst,
+        gotoLink = function(link) {
+            if ((typeof link === 'string') && (link = $.trim(link)) != "") {
+                var slide = $(document).find('[data-bz-orbit-source=' + link + ']');
+                if (slide.index() != -1) {
+                    var orbit = slide.closest('[data-orbit]').data('Instance');
+                    orbit._goto(slide.index());
+                }
+            }
+        };
+    $('[data-bz-orbit-target]').hover(
+        function() {
+            var link = $(this).attr('data-bz-orbit-target');
+            setTimeoutConst = setTimeout(gotoLink, delay, link);
+        },
+        function() {
+            clearTimeout(setTimeoutConst);
+        }
+    );
 </script>
 {% endblock %}
