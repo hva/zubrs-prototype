@@ -4,14 +4,18 @@
 
 {% set videos = load('video') %}
 
-<div class="small-10 columns">
+<div class="columns">
     <h1>Видео</h1>
-    {% for x in videos %}
-    <h2 class="subheader">{{ x.title }}</h2>
-    <div class="flex-video">
-        <iframe width="640" height="360" src="{{ x.src }}" frameborder="0" allowfullscreen></iframe>
-    </div>
-    {% endfor %}
+    <ul class="small-block-grid-2">
+        {% for x in videos %}
+        <li>
+            <h2 class="subheader">{{ x.title }}</h2>
+            <div class="flex-video">
+                <iframe width="640" height="360" src="{{ x.src }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 
 {% endblock %}
