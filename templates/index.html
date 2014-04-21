@@ -5,7 +5,7 @@
 <div class="small-12 columns">
     <div class="row">
         <div class="small-4 columns">
-            <ul data-orbit data-options="slide_number:false">
+            <ul data-orbit>
                 {% for id, x in news_main %}
                 <li>
                     <img src="{{ x.img }}" />
@@ -57,7 +57,7 @@
 
         <div class="small-4 columns end">
             <h5><a href="competitions.php">Результаты</a></h5>
-            <ul data-orbit data-options="slide_number:false;bullets:false;timer:false">
+            <ul data-orbit data-options="bullets:false;timer:false">
                 {% for x in games if (not teams[x.team_home].hidden or not teams[x.team_away].hidden) %}
                 <li>
                     <div class="panel">
@@ -94,4 +94,9 @@
      </div>
 </div>
 
+{% endblock %}
+
+{% block scripts %}
+<script>
+</script>
 {% endblock %}
