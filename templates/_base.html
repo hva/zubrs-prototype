@@ -119,23 +119,14 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.reveal.js"></script>
-    <script src="js/foundation/foundation.orbit.js"></script>
-    <script src="js/foundation/foundation.clearing.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
-    <script>
-    $(document).foundation({
-        orbit: {
-            timer_speed: 5000,
-            resume_on_mouseout: true,
-            slide_number: false,
-            prev_class: 'bz-orbit-prev',
-            next_class: 'bz-orbit-next'
-        }
-    });
-    </script>
 
     {% block scripts %}
     {% endblock %}
+
+    <script>
+    $(document).foundation();
+    </script>
 
     {% if not localhost %}
     <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23950747 = new Ya.Metrika({id:23950747, ut:"noindex"}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23950747?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->

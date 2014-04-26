@@ -71,7 +71,7 @@
             </ul>
         </div>
 
-        <div class="small-4 columns end">
+        <div class="small-4 columns">
             <h5><a href="news.php">Детский спорт</a></h5>
             <ul class="side-nav">
                 {% for id, x in news_child %}
@@ -84,13 +84,28 @@
                 {% endfor %}
             </ul>
         </div>
+
+        <div class="small-4 columns">
+            <h5><a href="competitions.php">Таблицы турниров 2014</a></h5>
+        </div>
      </div>
 </div>
 
 {% endblock %}
 
 {% block scripts %}
+<script src="js/foundation/foundation.orbit.js"></script>
 <script>
+    $(document).foundation({
+        orbit: {
+            timer_speed: 5000,
+            resume_on_mouseout: true,
+            slide_number: false,
+            prev_class: 'bz-orbit-prev',
+            next_class: 'bz-orbit-next'
+        }
+    });
+    
     var delay = 400,
         setTimeoutConst,
         gotoLink = function(link) {
