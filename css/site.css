@@ -1549,8 +1549,8 @@ table {
     table tfoot tr td {
       padding: 0.5rem 0.625rem 0.625rem;
       font-size: 0.875rem;
-      font-weight: normal;
-      color: #999999;
+      font-weight: bold;
+      color: #222222;
       text-align: left; }
   table tr th,
   table tr td {
@@ -2485,16 +2485,16 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.9375rem 0;
+    padding: 0 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block; }
     .tabs-content > .content.contained {
-      padding: 0.9375rem; }
+      padding: 0; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.9375rem; }
+      padding: 0 0; }
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {
@@ -3496,3 +3496,39 @@ body {
 
 .clearing-blackout li {
   clear: inherit !important; }
+
+.bz-table {
+  background: white;
+  margin-bottom: 1.25rem;
+  border: solid 1px #dddddd;
+  border: none; }
+  .bz-table thead,
+  .bz-table tfoot {
+    background: whitesmoke; }
+    .bz-table thead tr th,
+    .bz-table thead tr td,
+    .bz-table tfoot tr th,
+    .bz-table tfoot tr td {
+      padding: 0.5rem 0.625rem 0.625rem;
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: #222222;
+      text-align: left; }
+  .bz-table tr th,
+  .bz-table tr td {
+    padding: 0.5625rem 0.625rem;
+    font-size: 0.875rem;
+    color: #222222; }
+  .bz-table tr.even, .bz-table tr.alt, .bz-table tr:nth-of-type(even) {
+    background: #f9f9f9; }
+  .bz-table thead tr th,
+  .bz-table tfoot tr th,
+  .bz-table tbody tr td,
+  .bz-table tr td,
+  .bz-table tfoot tr td {
+    display: table-cell;
+    line-height: 1.125rem; }
+  .bz-table thead {
+    background: none; }
+    .bz-table thead tr td {
+      color: #999; }

@@ -96,7 +96,7 @@
             <div class="tabs-content">
             {% for id, c in competitions %}
                 <div class="content{% if loop.first %} active{% endif %}" id="tab-{{ id }}">
-                    {% include 'inc/_competition_table.html' with {'competition': c} %}
+                    {% include 'inc/_competition_table.html' with {'competition': c, 'class': 'bz-table'} %}
                 </div>
             {% endfor %}
             </div>

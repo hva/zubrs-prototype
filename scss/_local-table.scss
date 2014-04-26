@@ -1,0 +1,12 @@
+.bz-table {
+    @include table();
+    border: none;
+    thead {
+        background: none;
+        tr {
+            td {
+                color: #999;
+            }
+        }
+    }
+}

@@ -46,6 +46,10 @@
                 <td>{{ teams[x.team_away].title }}</td>
                 <td>{{ x.score_home ~ ':' ~ x.score_away }}</td>
             </tr>
+            {% else %}
+            <tr>
+                <td colspan="6">Игры отсутствуют</td>
+            </tr>
             {% endfor %}
         </tbody>
     </table>

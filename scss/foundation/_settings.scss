@@ -1041,8 +1041,8 @@ $side-nav-divider-color: $hr-border-color;
 // These control the table head styles
 // $table-head-bg: #f5f5f5  ;
 // $table-head-font-size: rem-calc(14);
-$table-head-font-color: #999;// $table-head-font-color: #222;
-$table-head-font-weight: normal; // $table-head-font-weight: bold;
+// $table-head-font-color: #222;
+// $table-head-font-weight: bold;
 // $table-head-padding: rem-calc(8 10 10);
 
 // These control the row padding and font styles
@@ -1070,7 +1070,7 @@ $tabs-navigation-padding: rem-calc(10); // $tabs-navigation-padding: rem-calc(16
 // $tabs-navigation-font-family: $body-font-family;
 
 // $tabs-content-margin-bottom: rem-calc(24);
-// $tabs-content-padding: $column-gutter/2;
+$tabs-content-padding: 0; // $tabs-content-padding: $column-gutter/2;
 
 // $tabs-vertical-navigation-margin-bottom: 1.25rem;
 
