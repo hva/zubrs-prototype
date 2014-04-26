@@ -3256,19 +3256,6 @@ body {
     width: 300px;
     height: 120px; }
 
-.top-bar {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
-  .top-bar input {
-    height: auto;
-    padding-top: 0.35rem;
-    padding-bottom: 0.35rem;
-    font-size: 0.75rem; }
-  .top-bar .button {
-    padding-top: 0.45rem;
-    padding-bottom: 0.35rem;
-    margin-bottom: 0;
-    font-size: 0.75rem; }
-
 .bz-content {
   background: #fff;
   padding-top: 15px;
@@ -3354,6 +3341,64 @@ body {
   .bz-panel span {
     color: #999;
     font-size: 0.7rem; }
+
+.bz-orbit-prev,
+.bz-orbit-next {
+  position: absolute;
+  top: 45%;
+  margin-top: -30px;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-indent: -9999px !important;
+  z-index: 10; }
+  .bz-orbit-prev:hover,
+  .bz-orbit-next:hover {
+    background-color: rgba(255, 255, 255, 0.6); }
+  .bz-orbit-prev > span,
+  .bz-orbit-next > span {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 10px; }
+
+.bz-orbit-prev {
+  left: 0; }
+  .bz-orbit-prev > span {
+    border-right-style: solid;
+    border-color: transparent;
+    border-right-color: rgba(51, 51, 51, 0.4); }
+  .bz-orbit-prev:hover > span {
+    border-right-color: rgba(51, 51, 51, 0.6); }
+
+.bz-orbit-next {
+  right: 0; }
+  .bz-orbit-next > span {
+    border-color: transparent;
+    border-left-style: solid;
+    border-left-color: rgba(51, 51, 51, 0.4);
+    left: 50%;
+    margin-left: -5px; }
+  .bz-orbit-next:hover > span {
+    border-left-color: rgba(51, 51, 51, 0.6); }
+
+.top-bar {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  .top-bar input {
+    height: auto;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.75rem; }
+  .top-bar .button {
+    padding-top: 0.45rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0;
+    font-size: 0.75rem; }
 
 .top-bar-section li:not(.has-form) a.active:not(.button) {
   background: #710508; }

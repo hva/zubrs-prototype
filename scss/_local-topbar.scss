@@ -1,0 +1,22 @@
+.top-bar {
+    input {
+        height: auto;
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+        font-size: 0.75rem;
+    }
+    .button {
+        padding-top: 0.45rem;
+        padding-bottom: 0.35rem;
+        margin-bottom: 0;
+        font-size: 0.75rem;
+    }
+    box-shadow: 0 0 20px rgba(#fff, .3);
+}
+
+.top-bar-section li:not(.has-form) a.active:not(.button) {
+    background: scale-color($primary-color, $lightness: -16%);
+    &:hover {
+        background: $primary-color;
+    }
+}

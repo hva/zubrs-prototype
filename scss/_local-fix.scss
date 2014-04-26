@@ -1,0 +1,12 @@
+/***** Fix Block Grid and Clearing Compatibility *****/
+[class*="block-grid-"] {
+  display: block!important;
+  margin: 0 -0.625em!important;
+  padding: 0!important;
+}
+[class*="block-grid-"] li {
+  margin-right:0!important;
+}
+.clearing-blackout li {
+  clear:inherit!important;
+}

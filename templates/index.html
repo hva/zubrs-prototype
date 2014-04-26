@@ -9,10 +9,10 @@
         {% set teams = load('teams') %}
         <div class="small-12 columns">
             {# <h5><a href="competitions.php">Результаты</a></h5> #}
-            <ul data-orbit data-options="bullets:false;timer:false">
+            <ul data-orbit data-options="bullets:false;timer:false;circular:false">
                 {% for row in games|batch(4) %}
                 <li>
-                    <div class="row">
+                    <div class="row" style="margin: 0 15px;">
                         {% for x in row %}
                             <div class="small-3 columns{% if loop.last %} end{% endif %}">
                                 {% include 'inc/_game3.html' with {'x': x, 'competitions': competitions, 'teams': teams} %}

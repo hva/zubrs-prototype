@@ -1,0 +1,55 @@
+$orbit-nav-bg: rgba(#fff, 0.4);
+$orbit-nav-bg-hover: rgba(#fff, 0.6);
+$orbit-nav-arrow-color: rgba(#333, 0.4);
+$orbit-nav-arrow-color-hover: rgba(#333, 0.6);
+$orbit-timer-show-progress-bar: false;
+
+.bz-orbit-prev,
+.bz-orbit-next {
+  position: absolute;
+  top: 45%;
+  margin-top: -30px;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: $orbit-nav-bg;
+  text-indent: -9999px !important;
+  z-index: 10;
+
+  &:hover {
+    background-color: $orbit-nav-bg-hover;
+  }
+
+  & > span {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 10px;
+  }
+}
+.bz-orbit-prev { #{$default-float}: 0;
+  & > span {
+    border-#{$opposite-direction}-style: solid;
+    border-color: transparent;
+    border-#{$opposite-direction}-color: $orbit-nav-arrow-color;
+  }
+  &:hover > span {
+    border-#{$opposite-direction}-color: $orbit-nav-arrow-color-hover;
+  }
+}
+.bz-orbit-next { #{$opposite-direction}: 0;
+  & > span {
+    border-color: transparent;
+    border-#{$default-float}-style: solid;
+    border-#{$default-float}-color: $orbit-nav-arrow-color;
+    #{$default-float}: 50%;
+    margin-#{$default-float}: -5px;
+  }
+  &:hover > span {
+    border-#{$default-float}-color: $orbit-nav-arrow-color-hover;
+  }
+}
