@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>И</td>
+            <td>В</td>
+            <td>П</td>
+            <td>%</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for x in competition.table %}
+        <tr>
+            <td>{{ loop.index }}.</td>
+            <td>{{ teams[x.team].title }}</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

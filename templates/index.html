@@ -2,11 +2,12 @@
 
 {% block content %}
 
+{% set competitions = load('competitions') %}
+{% set teams = load('teams') %}
+
 <div class="small-12 columns">
 
     <div class="row">
-        {% set competitions = load('competitions') %}
-        {% set teams = load('teams') %}
         <div class="small-12 columns">
             {# <h5><a href="competitions.php">Результаты</a></h5> #}
             <ul data-orbit data-options="bullets:false;timer:false;circular:false">
@@ -87,6 +88,18 @@
 
         <div class="small-4 columns">
             <h5><a href="competitions.php">Таблицы турниров 2014</a></h5>
+            <dl class="tabs" data-tab>
+            {% for id, c in competitions %}
+              <dd{% if loop.first %} class="active"{% endif %}><a href="#tab-{{ id }}">{{ c.title_short }}</a></dd>
+            {% endfor %}
+            </dl>
+            <div class="tabs-content">
+            {% for id, c in competitions %}
+                <div class="content{% if loop.first %} active{% endif %}" id="tab-{{ id }}">
+                    {% include 'inc/_competition_table.html' with {'competition': c} %}
+                </div>
+            {% endfor %}
+            </div>
         </div>
      </div>
 </div>
@@ -95,6 +108,7 @@
 
 {% block scripts %}
 <script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.tab.js"></script>
 <script>
     $(document).foundation({
         orbit: {
@@ -105,7 +119,7 @@
             next_class: 'bz-orbit-next'
         }
     });
-    
+
     var delay = 400,
         setTimeoutConst,
         gotoLink = function(link) {

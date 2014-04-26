@@ -22,16 +22,7 @@
     <h1>{{ competition.title }}</h1>
 
     <h2 class="subheader">Итоговая таблица</h2>
-    <table>
-        <tbody>
-            {% for x in competition.table %}
-            <tr>
-                <td>{{ loop.index }}.</td>
-                <td>{{ teams[x.team].title }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {% include 'inc/_competition_table.html' with {'competition': competition} %}
 
     <h2 class="subheader">Результаты</h2>
     <table>
