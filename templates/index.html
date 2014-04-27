@@ -90,7 +90,7 @@
             <h5><a href="competitions.php">Таблицы турниров 2014</a></h5>
             <dl class="tabs" data-tab>
             {% for id, c in competitions %}
-              <dd{% if loop.first %} class="active"{% endif %}><a href="#tab-{{ id }}">{{ c.title_short }}</a></dd>
+              <dd{% if loop.first %} class="active"{% endif %}><a href="#tab-{{ id }}" title="{{ c.title }}">{{ c.title_short }}</a></dd>
             {% endfor %}
             </dl>
             <div class="tabs-content">
